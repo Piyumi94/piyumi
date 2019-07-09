@@ -12,9 +12,6 @@ public class Map2 {
         TreeMap<String, Integer> sort = new TreeMap<>();
         sort.putAll(map);
 
-//        for (Map.Entry<String, Integer> entry: sort.entrySet()){
-//            System.out.println("Key = " + entry.getKey() +",value = " + entry.getValue());
-//        }
 
         LinkedHashMap<Integer, String> sortvalue = new LinkedHashMap<>();
              map.entrySet().stream().sorted(Map.Entry.comparingByValue())
@@ -29,6 +26,7 @@ public class Map2 {
         map.put("nimal", 89);
         map.put("sunil", 45);
         map.put("nihal",67);
+        map.put("nihal",77);
 
         sortbyvalue();
     }
